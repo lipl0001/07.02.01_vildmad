@@ -11,18 +11,20 @@
   <body>
     <header>
       <nav>
+        <!-- logo is inserted as background-image in css under class "logo" -->
         <a href="index.html" class="logo" aria-label="Home"></a>
         <ul>
           <li>
             <a href="https://vildmad.dk/en/get-out/naturvejledere">About</a>
           </li>
-          <li><a href="">Discover</a></li>
+          <li><a href="mushroom_list.html">Discover</a></li>
           <li><a href="https://vildmad.dk/en">Vildmad.dk</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div id="hero">
+        <!-- speech bubble is inserted as background-image in css under class "speech_bubble" -->
         <div class="speech_bubble">
           <h1>Welcome-text</h1>
           <p>
@@ -32,29 +34,18 @@
             temporibus, maxime sint totam!
           </p>
         </div>
+        <!-- mascot is inserted as background-image in css under class "mascot" -->
         <div class="mascot"></div>
       </div>
       <div class="seasons">
-        <div class="season winter">
-          <a href="mushroom_list.html">
-            <button class="season">Season - click here!</button>
-          </a>
-        </div>
-        <div class="season spring">
-          <a href="mushroom_list.html">
-            <button class="season">Season - click here!</button>
-          </a>
-        </div>
-        <div class="season summer">
-          <a href="mushroom_list.html">
-            <button class="season">Season - click here!</button>
-          </a>
-        </div>
-        <div class="season fall">
-          <a href="mushroom_list.html">
-            <button class="season">Season - click here!</button>
-          </a>
-        </div>
+        <template>
+          <div class="season">
+            <img src="" alt="" />
+            <a href="mushroom_list.html">
+              <button class="season">Season - click here!</button>
+            </a>
+          </div>
+        </template>
       </div>
     </main>
     <footer>
@@ -63,8 +54,9 @@
         <a href="https://vildmad.dk/en">Vildmad.dk</a>
       </div>
       <ul class="socials">
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Instagram</a></li>
+        <!-- social media icons are inserted as background-image in css under their respective classes -->
+        <li><a href="" class="facebook">Facebook</a></li>
+        <li><a href="" class="instagram">Instagram</a></li>
       </ul>
       <div class="contact">
         <h3>Contact</h3>
@@ -75,6 +67,7 @@
           </li>
         </ul>
       </div>
+      <!-- same class as hero, only changing the size of the mascot -->
       <div class="mascot"></div>
     </footer>
   </body>
