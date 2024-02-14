@@ -1,0 +1,14 @@
+* {
+  /* FONTS */
+  --display-font: ;
+  --title-font: ;
+  --body-font: ;
+
+  /* COLOURS */
+  --cream: #fff6e1;
+  --green-light: #788c64;
+  --green-dark: #3d654d;
+  --rust: #693d31;
+  --red: #d34c49;
+  --yellow: #f2c744;
+}
