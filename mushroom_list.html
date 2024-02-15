@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vild Mad | Food In The Wild!</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -20,15 +23,9 @@
     </header>
     <main>
       <div class="season_hero">
-        <div>
-          <h1>Season</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-            ipsum quidem, enim fugit debitis vitae voluptatibus! Reprehenderit
-            deserunt officia possimus! Commodi similique nihil ratione
-            reiciendis tempore officia aperiam libero nobis?
-          </p>
-        </div>
+        <img src="" alt="" />
+        <!-- Will be changed dynamically based on js, only need styling -->
+        <h1>Season</h1>
       </div>
       <div class="season_menu">
         <ul>
@@ -38,15 +35,21 @@
           <li><a href="season.html">Season</a></li>
         </ul>
       </div>
-      <h1 class="no_season">Discover-title</h1>
+      <h1 class="no_season">
+        Discover nature's own food - right in your backyard!
+      </h1>
+      <!-- Container with list view in grid -->
       <div class="grid_container">
-        <div class="mushroom_card">
-          <a href="mushroom_singleview.html">
-            <img src="" alt="" />
-            <h2>Mushroom</h2>
-            <h3>Description or subtitle</h3>
-          </a>
-        </div>
+        <template class="card_template">
+          <div class="mushroom_card">
+            <a href="mushroom_singleview.html">
+              <!-- Img src will change dynamically with js -->
+              <img src="" alt="" />
+              <h2>Mushroom</h2>
+              <h3>Description or subtitle</h3>
+            </a>
+          </div>
+        </template>
       </div>
     </main>
     <footer>
@@ -55,19 +58,24 @@
         <a href="https://vildmad.dk/en">Vildmad.dk</a>
       </div>
       <ul class="socials">
-        <li><a href="">Facebook</a></li>
-        <li><a href="">Instagram</a></li>
+        <!-- social media icons are inserted as background-image in css under their respective classes -->
+        <li><a href="" class="facebook">Facebook</a></li>
+        <li><a href="" class="instagram">Instagram</a></li>
       </ul>
       <div class="contact">
         <h3>Contact</h3>
         <ul>
-          <li>+45 18 73 87 23 74</li>
+          <li>
+            <a href="tel:+4526350017">+45 26 35 00 17</a>
+          </li>
           <li>
             <a href="mailto:vildmad.dk@gmail.com">vildmad.dk@gmail.com</a>
           </li>
         </ul>
       </div>
+      <!-- same class as hero, only changing the size of the mascot -->
       <div class="mascot"></div>
     </footer>
+    <script src="js/listview.js"></script>
   </body>
 </html>
