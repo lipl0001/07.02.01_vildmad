@@ -1,0 +1,74 @@
+/* TEXT */
+
+h1 {
+  font-family: var(--display-font);
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: var(--title-font);
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--title-font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 1.5rem;
+  max-width: 72ch;
+}
+
+a {
+  font-family: var(--title-font);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  position: relative;
+  margin: 1rem 0;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--green-light);
+  padding: 1.25rem 5rem;
+}
+
+nav li a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+.logo {
+  background-image: url("../svg/logo.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  aspect-ratio: 118 / 131;
+  height: 100px;
+  position: absolute;
+  left: 5vw;
+}

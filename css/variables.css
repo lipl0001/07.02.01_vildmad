@@ -1,32 +1,19 @@
-/* IMPORT - FONT FLOREST */
+/* IMPORT - GOOGLEFONTS */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+/* IMPORT - WEBFONT */
 
 @font-face {
   font-family: "florest", sans-serif;
-  src: url("/webfont_florest/FlorestRegular.woff2") format("woff2"),
-    url("/webfont_florest/FlorestRegular.woff") format("woff");
+  src: url("../webfont_florest/FlorestRegular.woff2") format("woff2"),
+    url("../webfont_florest/FlorestRegular.woff") format("woff");
 }
 
-/* IMPORT - FONT SOFIA SANS SEMI CONDENSED */
-@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap");
-
-/* <uniquifier>: Use a uniquifier for the class name */
-/* <weight>: Use a value from 1 to 1000 */
-
-/* .sofia-sans semi condensed-<uniquifier> {
-  font-family: "Sofia Sans Semi Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
-/* IMPORT - FONT LATO */
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
-* {
+:root {
   /* FONTS */
   --display-font: "florest", sans-serif;
-  --title-font: "Sofia Sans Semi Condensed", sans-serif;
-  --body-font: "Lato", sans-serif;
+  --title-font: "Sofia Sans Semi Condensed", serif;
+  --body-font: "Lato", serif;
 
   /* COLOURS */
   --cream: #fff6e1;
@@ -35,4 +22,5 @@
   --rust: #693d31;
   --red: #d34c49;
   --yellow: #f2c744;
+  --dark: #232323;
 }
