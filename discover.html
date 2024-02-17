@@ -33,34 +33,32 @@
       </nav>
     </header>
     <main>
-      <img src="" alt="" class="location" />
-      <img src="" alt="" class="mushroom" />
-      <h1>Mushroom</h1>
-      <h2>Subtitle</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque
-        neque ducimus veritatis atque labore ratione culpa cupiditate officiis
-        odit? Consectetur perferendis quidem voluptates harum. Reprehenderit
-        alias possimus sequi similique.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, error
-        culpa minima ea vel esse sequi repellat repellendus necessitatibus
-        eligendi praesentium ipsum! Maiores provident blanditiis omnis
-        exercitationem minima. Facilis, eos!
-      </p>
-      <div class="grid info">
+      <div id="discover_hero">
+        <h1 class="season">Season</h1>
+        <h1 class="no_season">
+          Discover nature's own food<br />
+          <span>right in your backyard!</span>
+        </h1>
+      </div>
+      <div class="discover_menu">
         <ul>
-          <li>Info</li>
-          <li>Info</li>
-          <li>Info</li>
-        </ul>
-        <ul>
-          <li>Info</li>
-          <li>Info</li>
-          <li>Info</li>
+          <li><a href="discover.html">Winter</a></li>
+          <li><a href="discover.html">Spring</a></li>
+          <li><a href="discover.html">Summer</a></li>
+          <li><a href="discover.html">Fall</a></li>
         </ul>
       </div>
+      <section class="grid_container">
+        <template class="card_template">
+          <article class="mushroom_card">
+            <a href="mushroom_singleview.html">
+              <img src="svg/Kantarel_ravarekort_app.png" alt="" />
+              <h1>Mushroom</h1>
+              <h2>Description or subtitle</h2>
+            </a>
+          </article>
+        </template>
+      </section>
     </main>
     <footer>
       <section>
@@ -108,6 +106,6 @@
       <div class="mascot"></div>
     </footer>
     <script src="js/mobilenav.js"></script>
-    <script src="js/singleview.js"></script>
+    <script src="js/listview.js"></script>
   </body>
 </html>

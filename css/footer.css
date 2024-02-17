@@ -4,12 +4,9 @@ footer {
   /* GRID */
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* POSITION */
-  position: fixed;
-  bottom: 0;
   /* STYLE */
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--green-light);
 }
 
@@ -22,7 +19,7 @@ footer section {
 }
 
 footer section article {
-  min-width: 200px;
+  min-width: 175px;
 }
 
 article.links .visitalso {
@@ -58,7 +55,7 @@ article.links .socials a.instagram {
 }
 
 footer .mascot {
-  width: 150px;
+  width: 125px;
   align-self: center;
 }
 
