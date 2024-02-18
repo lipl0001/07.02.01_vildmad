@@ -1,7 +1,19 @@
 /* ALL STYLESHEETS IMPORTED */
 
+/* GLOBAL */
 @import url("reset.css");
 @import url("variables.css");
 @import url("text.css");
 @import url("nav.css");
 @import url("footer.css");
+
+/* INDEX */
+
+/* DISCOVER */
+@import url("discover.css");
+@import url("mushroom_list.css");
+
+/* GET INVOLVED */
+
+/* MUSHROOM SINGLE VIEW */
+@import url("singleview.css");

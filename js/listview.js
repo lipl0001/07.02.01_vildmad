@@ -5,8 +5,8 @@ let url;
 if (seasonURL) {
   url = `https://exjdxiojjqpysmemownv.supabase.co/rest/v1/wildfood_mushrooms?season=cs.["Summer"]`;
 } else {
-  // url = "https://exjdxiojjqpysmemownv.supabase.co/rest/v1/wildfood_mushrooms";
-  url = `https://exjdxiojjqpysmemownv.supabase.co/rest/v1/wildfood_mushrooms?season=cs.["Summer"]`;
+  url = "https://exjdxiojjqpysmemownv.supabase.co/rest/v1/wildfood_mushrooms";
+  // url = `https://exjdxiojjqpysmemownv.supabase.co/rest/v1/wildfood_mushrooms?season=cs.["Summer"]`;
 }
 
 fetch(url, {
@@ -39,6 +39,7 @@ function listMushrooms(mushroom) {
   tempClone.querySelector("h1").textContent = mushroom.name;
   tempClone.querySelector("h2").textContent = mushroom.intro_text;
   tempClone.querySelector("img").src = mushroom.img_src;
+  tempClone.querySelector("a").href = `mushroom.html?id=${mushroom.id}`;
 
   const listContainer = document.querySelector(".grid_container");
   listContainer.appendChild(tempClone);
@@ -46,4 +47,4 @@ function listMushrooms(mushroom) {
 
 // set if else parameters for discover hero image
 // document.querySelector("#discover_hero").style.backgroundImage = "url('../svg/season_winter.svg')";
-document.querySelector("#discover_hero h1.season").textContent = "Fall";
+// document.querySelector("#discover_hero h1.season").textContent = "Fall";

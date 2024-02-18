@@ -1,0 +1,69 @@
+/* MOBILE */
+
+#discover_hero {
+  aspect-ratio: 16 / 12;
+  background-image: url("../svg/season_fall.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 75%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-align: center;
+}
+
+#discover_hero h1 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+#discover_hero h1.season {
+  display: none;
+}
+
+#discover_hero h1.no_season {
+  min-width: 250px;
+  display: none;
+}
+
+#discover_hero h1.no_season span {
+  font-family: var(--title-font);
+  font-size: 1.25rem;
+}
+
+.discover_menu {
+  background-color: var(--cream);
+}
+
+.discover_menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+
+  max-width: 1200px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 800px) {
+  #discover_hero {
+    aspect-ratio: 16 / 5;
+  }
+
+  #discover_hero h1 {
+    font-size: 6rem;
+  }
+
+  #discover_hero h1.no_season span {
+    font-size: 3rem;
+  }
+
+  .discover_menu a:hover {
+    color: var(--rust);
+  }
+}
