@@ -1,0 +1,61 @@
+/* MOBILE */
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+article.mushroom_card {
+  display: contents;
+}
+
+article.mushroom_card img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  max-height: 260px;
+}
+
+article.mushroom_card a {
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px #d8d8d8;
+  transition: transform 0.2s ease-in;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 0.5rem;
+}
+
+article.mushroom_card h1,
+article.mushroom_card h2 {
+  font-family: var(--title-font);
+}
+
+article.mushroom_card h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  padding: 1rem 1rem 0;
+}
+
+article.mushroom_card h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: none;
+  padding: 0 1rem 1rem;
+}
+
+/* DESKTOP */
+
+@media (min-width: 800px) {
+  article.mushroom_card a:hover {
+    transform: scale(1.02);
+  }
+}

@@ -6,6 +6,7 @@
     <title>Vild Mad | Food In The Wild!</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/67f49ad00c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -33,34 +34,51 @@
       </nav>
     </header>
     <main>
-      <img src="" alt="" class="location" />
-      <img src="" alt="" class="mushroom" />
-      <h1>Mushroom</h1>
-      <h2>Subtitle</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque
-        neque ducimus veritatis atque labore ratione culpa cupiditate officiis
-        odit? Consectetur perferendis quidem voluptates harum. Reprehenderit
-        alias possimus sequi similique.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, error
-        culpa minima ea vel esse sequi repellat repellendus necessitatibus
-        eligendi praesentium ipsum! Maiores provident blanditiis omnis
-        exercitationem minima. Facilis, eos!
-      </p>
-      <div class="grid info">
-        <ul>
-          <li>Info</li>
-          <li>Info</li>
-          <li>Info</li>
-        </ul>
-        <ul>
-          <li>Info</li>
-          <li>Info</li>
-          <li>Info</li>
-        </ul>
-      </div>
+      <template class="mushroom_template">
+        <section class="overview">
+          <div class="img">
+            <img src="" alt="" class="location" />
+            <img src="" alt="" class="mushroom" />
+          </div>
+          <article>
+            <h1>Mushroom</h1>
+            <p class="intro_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              eaque neque ducimus veritatis atque labore ratione culpa cupiditate
+              officiis odit? Consectetur perferendis quidem voluptates harum.
+              Reprehenderit alias possimus sequi similique.
+            </p>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque,
+              error culpa minima ea vel esse sequi repellat repellendus
+              necessitatibus eligendi praesentium ipsum! Maiores provident
+              blanditiis omnis exercitationem minima. Facilis, eos!
+            </p>
+          </article>
+        </section>
+        <section class="info">
+          <div class="mascot"></div>
+          <article>
+            <h3>When can you find me?</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+              fugit laudantium autem totam, nostrum doloremque optio odit, aut
+              dolores veritatis inventore porro asperiores sunt ea itaque corporis
+              praesentium modi neque?
+            </p>
+          </article>
+          <article>
+            <ul class="facts">
+              <li class="location"><i class="fa-solid fa-location-dot fa-fw"></i><span></span></li>
+              <li class="sub_biotype_q"><i class="fa-solid fa-circle-question fa-fw"></i><span></span></li>
+            </ul>
+            <ul class="choices">
+              <li class="choice_a"><i class="fa-solid fa-chevron-right"></i><span></span></li>
+              <li class="choice_b"><i class="fa-solid fa-chevron-right"></i><span></span></li>
+            </ul>
+          </article>          
+        </section>
+      </template>      
     </main>
     <footer>
       <section>
