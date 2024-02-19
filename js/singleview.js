@@ -2,6 +2,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const url = `https://exjdxiojjqpysmemownv.supabase.co/rest/v1/wildfood_mushrooms?id=eq.${id}`;
 
+// FETCHING DATABASE
+
 fetch(url, {
   method: "GET",
   headers: {
@@ -17,9 +19,12 @@ function showData(mushroom) {
 
   const singleShroom = mushroom[0];
 
+  // CREATING MUSHROOM TEMPLATE
   const shroomTemplate = document.querySelector(".mushroom_template").content;
+  // CLONING MUSHROOM TEMPLATE
   const tempClone = shroomTemplate.cloneNode(true);
 
+  // INSERTING DATA INTO TEMPLATE
   tempClone.querySelector("section.overview img.location").src =
     singleShroom.location_img_src;
   tempClone.querySelector("section.overview img.mushroom").src =
@@ -41,6 +46,7 @@ function showData(mushroom) {
   tempClone.querySelector("section.info li.choice_b span").textContent =
     singleShroom.sub_biotype_choice02;
 
+  // APPENDING TEMPLATE TO MAIN
   const main = document.querySelector("main");
   main.appendChild(tempClone);
 }

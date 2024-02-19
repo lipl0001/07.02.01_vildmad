@@ -17,7 +17,8 @@ img.mushroom {
   transform: translateX(50%);
   right: 50%;
   bottom: -100px;
-  max-width: 200px;
+  width: 200px;
+  border: 2px solid var(--rust);
 }
 section.overview article,
 section.info article {
@@ -100,5 +101,9 @@ section.info ul.choices i {
 
   section.info ul.choices i {
     font-size: 1rem;
+  }
+
+  img.mushroom {
+    width: 225px;
   }
 }

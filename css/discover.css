@@ -2,7 +2,7 @@
 
 #discover_hero {
   aspect-ratio: 16 / 12;
-  background-image: url("../svg/season_fall.svg");
+  background-image: url("../svg/wave_v1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 75%;
@@ -23,7 +23,7 @@
 
 #discover_hero h1.no_season {
   min-width: 250px;
-  display: none;
+  /* display: none; */
 }
 
 #discover_hero h1.no_season span {
